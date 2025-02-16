@@ -1,15 +1,12 @@
 /**
-* @name LilyPichu
+* @name LilyPichu (Vendetta Port)
 * @author Nyria#3863
-* @description A theme based on @Melonturtle_ stream design
-* @invite rtBQX5D3bD
+* @description A theme based on @Melonturtle_ stream design, ported for Vendetta.
 * @version 1.4
-* @donate https://ko-fi.com/nyria
 */
-@import url("https://nyri4.github.io/LilyPichu/main.css");
 
-/* Remove decorations */
-@import url("https://nyri4.github.io/LilyPichu/stuff/overlay.css");
+/* Import external resources */
+@import url("https://nyri4.github.io/LilyPichu/main.css");
 
 :root {
   /* --- User variables --- */
@@ -17,15 +14,14 @@
   /* Jumping GIF */
   --jumping-gif: url("https://i.imgur.com/dCd49s0.gif");
 
-  /* Background (if you want an image replace it by : 
-
---background-tertiary-alt: url("image-link"); without that => */
+  /* Background */
   --background-tertiary-alt: #ffc7d4;
 
-  /* Border-radius for the whole theme */
+  /* Border-radius */
   --border-radius: 20px;
 }
 
+/* Dark Theme */
 .theme-dark {
   /* Text */
   --text-normal: #f8e1e5;
@@ -59,8 +55,8 @@
   --input-background: var(--background-secondary);
 
   /* Scrollbar */
-  --scrollbar-auto-thumb: var(--background-tertiary);
-  --scrollbar-auto-track: var(--background-secondary-alt);
+  --scrollbar-thumb: var(--background-tertiary);
+  --scrollbar-track: var(--background-secondary-alt);
   --scrollbar-thin-thumb: var(--background-tertiary);
   --scrollbar-thin-track: transparent;
 
@@ -68,33 +64,29 @@
   --channel-text-area-placeholder: var(--interactive-normal);
   --deprecated-quickswitcher-input-background: var(--background-primary);
 }
-.colorBrand-3cPPsm {
-  color: #c5536c;
-}
-.colorDefault-CDqZdO.focused-3qFvc8,
-.colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) {
-  background-color: var(--background-modifier-hover) !important;
-}
 
 /* Buttons */
-.lookFilled-1H2Jvj {
+.button-38aScr {
   background-color: #c5536c !important;
 }
-.lookFilled-1H2Jvj:active,
-.lookFilled-1H2Jvj:hover {
+.button-38aScr:active,
+.button-38aScr:hover {
   background-color: #b64a61 !important;
 }
-.lookOutlined-3yKVGo:not(.colorWhite-1H92hK) {
+
+/* Outlined Buttons */
+.buttonOutlined-3yKVGo:not(.colorWhite-1H92hK) {
   color: #c5536c;
   border-color: #c5536c;
 }
 
 /* Hover background */
-.colorDefault-CDqZdO.focused-3qFvc8,
-.colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) {
-  color: var(--interactive-normal);
+.item-PXvHYJ:focus,
+.item-PXvHYJ:active:not(.hideInteraction-2jPGL_) {
+  background-color: var(--background-modifier-hover) !important;
 }
 
+/* Light Theme */
 .theme-light {
   /* Text */
   --text-normal: #a86373;
@@ -122,35 +114,11 @@
   --background-modifier-selected: rgba(31, 21, 21, 0.11);
 
   /* Scrollbar */
-  --scrollbar-auto-thumb: var(--background-tertiary);
-  --scrollbar-auto-track: var(--background-secondary-alt);
+  --scrollbar-thumb: var(--background-tertiary);
+  --scrollbar-track: var(--background-secondary-alt);
   --scrollbar-thin-thumb: var(--background-tertiary);
   --scrollbar-thin-track: transparent;
 
   /* Other */
   --deprecated-quickswitcher-input-background: var(--background-primary);
-}
-
-.colorDefault-CDqZdO.focused-3qFvc8,
-.colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) {
-  background-color: var(--background-modifier-hover) !important;
-}
-
-/* Buttons */
-.lookFilled-1H2Jvj {
-  background-color: #c5536c !important;
-}
-.lookFilled-1H2Jvj:active,
-.lookFilled-1H2Jvj:hover {
-  background-color: #b64a61 !important;
-}
-.lookOutlined-3yKVGo:not(.colorWhite-1H92hK) {
-  color: #c5536c;
-  border-color: #c5536c;
-}
-
-/* Hover background */
-.colorDefault-CDqZdO.focused-3qFvc8,
-.colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) {
-  color: var(--interactive-normal);
 }
